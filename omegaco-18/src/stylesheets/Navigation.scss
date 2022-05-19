@@ -1,0 +1,19 @@
+header {
+    display: flex;
+
+    @media screen and (min-width: 481px) {
+    }
+
+    @media screen and (min-width: 769px) {
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+
+    h1 {
+        margin-left: 0.2em;
+        color: rgb(176, 23, 23);
+    }
+}

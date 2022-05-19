@@ -1,0 +1,10 @@
+.App {
+    display: flex;
+    flex-flow: column wrap;
+
+    @media screen and (min-width: 481px) {
+    }
+
+    @media screen and (min-width: 769px) {
+    }
+}
