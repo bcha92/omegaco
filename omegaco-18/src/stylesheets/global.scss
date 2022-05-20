@@ -5,8 +5,12 @@
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
+    color: #393939;
 }
 
-:root {
-    --global--font-color: blue;
-}
+$color--omega-red: #B01717;
+$color--omega-lightgray: #E5E4E2;
+$color--omega-gray: #A9A9A9;
+$color--omega-darkgray: #696969;
+$size--half-em: 0.5em;
+$size--icon: 50px;
