@@ -1,6 +1,6 @@
-import bg from "../assets/omegaco_2.png";
+import bg from "../assets/omegaco_drones2.jpeg";
 
-export default function Home() {
+export default function Rates() {
     return (
         <main>
             <img

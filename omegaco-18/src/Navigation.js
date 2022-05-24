@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../stylesheets/Navigation.scss";
-import OmegaCo_Icon from "../assets/omegaco_icon.png";
+
+import "./stylesheets/Navigation.scss";
+import OmegaCo_Icon from "./assets/omegaco_icon.png";
 
 export default function Navigation() {
     const [menu, setMenu] = useState(false);
@@ -18,15 +19,15 @@ export default function Navigation() {
                             setMenu(!menu)
                         }}
                     />
-                    {menu && <Link exact to="/">
+                    {menu && <Link to="/">
                         <h1>OMEGACO</h1>
                     </Link>}
                 </div>
                 {menu && <nav>
-                    <Link to="#!">What is Omega</Link>
-                    <Link to="#!">Why buy Omega</Link>
-                    <Link to="#!">Franchising§</Link>
-                    <Link to="#!">Contact Us</Link>
+                    <Link to="what">What is Omega</Link>
+                    <Link to="why">Why buy Omega</Link>
+                    <Link to="rates">Pricing and Rates §</Link>
+                    <Link to="contact">Contact Us</Link>
                 </nav>}
             </header>
         </>

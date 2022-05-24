@@ -1,9 +1,32 @@
 @import "./global.scss";
 
 .App {
+
     @media screen and (min-width: 481px) {
+        //
     }
 
     @media screen and (min-width: 769px) {
+        //
+    }
+
+    main {
+        padding: 1em;
+    
+        // Page Background Image
+        img {
+            object-fit: cover;
+            opacity: 0.4;
+            z-index: -1;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        div {
+            padding: 0.5em;
+            background: rgba(169, 169, 169, 0.8);
+            border-radius: 5px;
+        }
     }
 }
