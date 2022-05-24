@@ -1,7 +1,16 @@
 @import "./global.scss";
 
+.nav-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $color--omega-modal;
+    z-index: 4;
+}
+
 header {
     top: 0;
+    z-index: 5;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -35,14 +44,16 @@ header {
         display: flex;
         flex-direction: column;
         width: 100%;
-        list-style: none;
         box-sizing: border-box;
 
         a {
             padding: 0.5em 1em;
             border-top: 2px solid $color--omega-darkgray;
-            text-decoration: none;
         }
+    }
+
+    a {
+        text-decoration: none;
     }
 
     @media screen and (min-width: 481px) {

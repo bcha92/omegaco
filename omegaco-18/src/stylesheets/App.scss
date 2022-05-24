@@ -1,7 +1,6 @@
-.App {
-    display: flex;
-    flex-flow: column wrap;
+@import "./global.scss";
 
+.App {
     @media screen and (min-width: 481px) {
     }
 
