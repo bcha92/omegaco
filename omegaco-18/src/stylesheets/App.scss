@@ -1,6 +1,6 @@
 @import "./global.scss";
 
-.App {
+div.App {
 
     @media screen and (min-width: 481px) {
         //
@@ -21,12 +21,53 @@
             position: fixed;
             top: 0;
             left: 0;
+
+            &.img-home {
+                top: -10rem;
+                left: -5rem;
+            }
+
+            &.img-what {
+                top: -5rem;
+                left: -2rem;
+            }
+
+            &.img-why {
+                left: -10rem;
+            }
+
+            &.img-rates {
+                top: -10rem;
+                left: -55rem;
+            }
+
+            &.img-contact {
+                left: -35rem;
+            }
         }
 
-        div {
-            padding: 0.5em;
-            background: rgba(169, 169, 169, 0.8);
-            border-radius: 5px;
+    }
+}
+
+section {
+    padding: 0.5em;
+    margin-top: 1em;
+    background: rgba(200, 200, 200, 0.8);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            align-self: center;
+        }
+
+        p {
+            align-self: flex-start;
         }
     }
 }

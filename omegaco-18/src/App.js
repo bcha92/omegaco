@@ -3,22 +3,26 @@ import './stylesheets/App.scss';
 
 // Components
 import Navigation from './Navigation';
-import Home from './components/Home';
-import What from './components/What';
-import Why from './components/Why';
-import Rates from './components/Rates';
-import Contact from './components/Contact';
+import Content from "./components/Content";
+
+// Data
+import DATA from "./assets/data.json";
 
 export default function App() {
   return (
     <div className="App">
       <Navigation />
       <Routes>
-        <Route path="what" element={<What />} />
-        <Route path="why" element={<Why />} />
-        <Route path="rates" element={<Rates />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="/" element={<Home />} />
+        {Object.keys(DATA).map(data => (
+        <Route
+          key={data}
+          // Exception to HomePage path as "/"
+          path={data === "home" ? "/" : data}
+          element={<Content
+            img={DATA[data].img}
+            info={DATA[data].info}
+          />}
+        />))}
       </Routes>
     </div>
   );

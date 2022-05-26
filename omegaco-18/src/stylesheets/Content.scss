@@ -1,0 +1,37 @@
+main {
+    padding: 1em;
+
+    // Page Background Image
+    img {
+        object-fit: cover;
+        opacity: 0.4;
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        &.img-home {
+            top: -10rem;
+            left: -5rem;
+        }
+
+        &.img-what {
+            top: -5rem;
+            left: -2rem;
+        }
+
+        &.img-why {
+            left: -10rem;
+        }
+
+        &.img-rates {
+            top: -10rem;
+            left: -55rem;
+        }
+
+        &.img-contact {
+            left: -35rem;
+        }
+    }
+
+}
