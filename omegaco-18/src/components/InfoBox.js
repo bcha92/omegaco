@@ -1,4 +1,4 @@
-import "../stylesheets/InfoBox.scss"
+import "../stylesheets/InfoBox.scss";
 
 export default function InfoBox({
     faicon="", title="", sub="", p=""

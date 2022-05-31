@@ -21,6 +21,7 @@ export default function App() {
           element={<Content
             img={DATA[data].img}
             info={DATA[data].info}
+            rate={DATA[data].rate}
           />}
         />))}
       </Routes>
