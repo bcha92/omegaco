@@ -3,12 +3,17 @@ import "../stylesheets/Content.scss";
 // Sub-Components
 import InfoBox from "./InfoBox";
 import RateBox from "./RateBox";
+import OmegaBot from "./OmegaBot";
+import Contact from "./Contact";
 
 export default function Content({
-    img = {}, info = [], rate = [], contact = false
+    img = {}, info = [], rate = [], phrases = [], bot = false, contact = false
 }) {
     return (
         <main>
+            {bot ? <OmegaBot
+                phrases={phrases.length > 0 ? phrases : "Welcome to OMEGACO!"}
+            /> : <></>}
             {Object.values(img).length === 0 ? <></> :
             <img // Background Image for Content Component
                 src={img.src}
@@ -32,6 +37,7 @@ export default function Content({
                     text={r.text}
                 />
             )}
+            {contact ? <Contact /> : <></>}
         </main>
     );
 }

@@ -22,6 +22,9 @@ export default function App() {
             img={DATA[data].img}
             info={DATA[data].info}
             rate={DATA[data].rate}
+            bot={data === "home"}
+            phrases={DATA[data].phrases}
+            contact={data === "contact"}
           />}
         />))}
       </Routes>
