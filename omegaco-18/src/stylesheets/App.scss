@@ -1,13 +1,5 @@
 div.App {
 
-    @media screen and (min-width: 481px) {
-        //
-    }
-
-    @media screen and (min-width: 769px) {
-        //
-    }
-
     main {
         padding: 1em;
     
@@ -44,6 +36,14 @@ div.App {
             }
         }
 
+    }
+
+    @media screen and (min-width: 481px) {
+        //
+    }
+
+    @media screen and (min-width: 769px) {
+        //
     }
 }
 

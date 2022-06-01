@@ -25,6 +25,10 @@ header {
         border-bottom-right-radius: $size--half-em;
     }
 
+    &.max {
+        display: none;
+    }
+
     .logo {
         display: flex;
         align-items: center;
@@ -52,5 +56,19 @@ header {
             padding: 0.5em 1em;
             border-top: 2px solid $color--omega-darkgray;
         }
+    }
+
+    @media screen and (min-width: 481px) {
+        &.min {
+            display: none;
+        }
+
+        &.max {
+            display: flex;
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        //
     }
 }

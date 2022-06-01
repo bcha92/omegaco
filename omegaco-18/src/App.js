@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './stylesheets/App.scss';
 
@@ -9,6 +10,8 @@ import Content from "./components/Content";
 import DATA from "./assets/data.json";
 
 export default function App() {
+  const [ botIndex, setBotIndex ] = useState(0);
+
   return (
     <div className="App">
       <Navigation />
@@ -25,6 +28,8 @@ export default function App() {
             bot={data === "home"}
             phrases={DATA[data].phrases}
             contact={data === "contact"}
+            botIndex={botIndex}
+            setBotIndex={setBotIndex}
           />}
         />))}
       </Routes>

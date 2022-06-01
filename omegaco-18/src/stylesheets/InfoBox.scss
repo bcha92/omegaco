@@ -1,7 +1,9 @@
+@import "./global.scss";
+
 section {
     padding: 0.5em;
     margin-top: 1em;
-    background: rgba(200, 200, 200, 0.8);
+    background: $color--omega-gray;
     border-radius: 5px;
     display: flex;
     flex-direction: column;

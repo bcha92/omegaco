@@ -7,12 +7,15 @@ import OmegaBot from "./OmegaBot";
 import Contact from "./Contact";
 
 export default function Content({
-    img = {}, info = [], rate = [], phrases = [], bot = false, contact = false
+    img = {}, info = [], rate = [], phrases = [], bot = false, contact = false,
+    botIndex, setBotIndex
 }) {
     return (
         <main>
             {bot ? <OmegaBot
                 phrases={phrases.length > 0 ? phrases : "Welcome to OMEGACO!"}
+                index={botIndex}
+                setIndex={setBotIndex}
             /> : <></>}
             {Object.values(img).length === 0 ? <></> :
             <img // Background Image for Content Component

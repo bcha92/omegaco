@@ -30,6 +30,15 @@ export default function Navigation() {
                     <Link to="contact">Contact Us</Link>
                 </nav>}
             </header>
+            <header className="max">
+                <div className="logo">
+                    <img
+                        src={OmegaCo_Icon}
+                        alt="oc_icon"
+                    />
+                    <h1>OMEGACO</h1>
+                </div>
+            </header>
         </>
     );
 }
