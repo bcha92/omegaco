@@ -4,7 +4,7 @@ div.App {
         padding: 1em;
     
         // Page Background Image
-        img {
+        > img {
             object-fit: cover;
             opacity: 0.4;
             z-index: -1;
@@ -39,33 +39,46 @@ div.App {
     }
 
     @media screen and (min-width: 481px) {
-        //
-    }
+        main {
+            padding: 2em;
 
-    @media screen and (min-width: 769px) {
-        //
-    }
-}
+            > img {
+                transform: scale(1.25);
 
-section {
-    padding: 0.5em;
-    margin-top: 1em;
-    background: rgba(200, 200, 200, 0.8);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+                &.img-home {
+                    top: 3rem;
+                    left: 5rem;
+                }
 
-    div {
-        display: flex;
-        flex-direction: column;
+                &.img-what {
+                    top: -3rem;
+                }
 
-        h2 {
-            align-self: center;
+                &.img-why {
+                    top: 5rem;
+                    left: -4rem;
+                }
+
+                &.img-rates {
+                    top: 6rem;
+                    left: -20rem;
+                }
+
+                &.img-contact {
+                    top: 4rem;
+                    left: -32rem;
+                }
+            }
         }
+    }
 
-        p {
-            align-self: flex-start;
+    @media screen and (min-width: 1000px) {
+        main {
+            padding: 3em;
+
+            > img {
+                transform: scale(1.5);
+            }
         }
     }
 }

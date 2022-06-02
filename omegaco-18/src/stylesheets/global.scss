@@ -32,3 +32,17 @@ h2, .fas {
 a {
     text-decoration: none;
 }
+
+@media screen and (min-width: 1000px) {
+    h2, p {
+        margin-bottom: 1em;
+    }
+
+    h2, .fas {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}

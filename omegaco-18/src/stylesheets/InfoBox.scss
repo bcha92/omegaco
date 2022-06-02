@@ -21,4 +21,8 @@ section {
             align-self: flex-start;
         }
     }
+
+    @media screen and (min-width: 681px) {
+        padding: 1em;
+    }
 }

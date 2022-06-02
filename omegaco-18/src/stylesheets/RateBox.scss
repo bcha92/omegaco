@@ -30,4 +30,26 @@
     .double {
         color: $color--omega-red;
     }
+
+    .select {
+        padding: 0.5em;
+        font-weight: bold;
+        color: $color--omega-lightgray;
+        background: $color--omega-darkgray;
+        min-width: 10em;
+        align-self: center;
+    }
+
+    @media screen and (min-width: 681px) {
+        margin-top: 1.5em;
+
+        div {
+            padding: 1em;
+        }
+
+        .select {
+            padding: 1em;
+            margin-top: 1em;
+        }
+    }
 }

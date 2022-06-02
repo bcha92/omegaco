@@ -19,25 +19,16 @@ export default function Navigation() {
                             setMenu(!menu)
                         }}
                     />
-                    {menu && <Link to="/">
+                    <Link to="/">
                         <h1>OMEGACO</h1>
-                    </Link>}
+                    </Link>
                 </div>
-                {menu && <nav>
+                <nav>
                     <Link to="what">What is Omega</Link>
                     <Link to="why">Why buy Omega</Link>
                     <Link to="rates">Pricing and Rates §</Link>
                     <Link to="contact">Contact Us</Link>
-                </nav>}
-            </header>
-            <header className="max">
-                <div className="logo">
-                    <img
-                        src={OmegaCo_Icon}
-                        alt="oc_icon"
-                    />
-                    <h1>OMEGACO</h1>
-                </div>
+                </nav>
             </header>
         </>
     );

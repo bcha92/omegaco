@@ -62,7 +62,7 @@ export default function Contact() {
                     }
                 })}
                 {error !== "" ? <p className="error-message">Please enter your {error}!</p> : <></>}
-                <input type="submit" />
+                <input className="submit" type="submit" />
             </form>}
         </section>
     );
