@@ -4,6 +4,7 @@ $color--omega-lightgray: #e8e8e8;
 $color--omega-gray: rgba(240, 240, 240, 0.8);
 $color--omega-darkgray: #373737;
 
+$size--quarter-em: 0.25em;
 $size--half-em: 0.5em;
 $size--icon: 50px;
 
@@ -33,7 +34,7 @@ a {
     text-decoration: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     h2, p {
         margin-bottom: 1em;
     }

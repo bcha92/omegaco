@@ -23,6 +23,13 @@ export default function Navigation() {
                         <h1>OMEGACO</h1>
                     </Link>
                 </div>
+                <Link to="/" className="max">
+                    <img
+                        src={OmegaCo_Icon}
+                        alt="oc_icon"
+                    />
+                    <h1>OMEGACO</h1>
+                </Link>
                 <nav>
                     <Link to="what">What is Omega</Link>
                     <Link to="why">Why buy Omega</Link>
