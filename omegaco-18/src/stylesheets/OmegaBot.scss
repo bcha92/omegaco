@@ -1,6 +1,4 @@
 main > section.bothome {
-    display: flex;
-
     .bubble {
         margin: 1em;
         display: flex;
@@ -29,5 +27,20 @@ main > section.bothome {
         position: relative;
         margin-top: 1em;
         opacity: 1;
+    }
+
+    @media screen and (min-width: 769px) {
+        flex-direction: row-reverse;
+
+        .bubble {
+            flex-direction: row-reverse;
+
+            .tip {
+                border-left: none;
+                border-right: 2em solid white;
+                border-top: 1em solid transparent;
+                border-bottom: 1em solid transparent;
+            }
+        }
     }
 }
