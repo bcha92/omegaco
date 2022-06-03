@@ -19,6 +19,7 @@ export default function App() {
         <Route
           key={data}
           // Exception to HomePage path as "/"
+          exact={data === "home" ? true : false}
           path={data === "home" ? "/" : data}
           element={<Content
             img={DATA[data].img}
