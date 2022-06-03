@@ -1,0 +1,128 @@
+@import "./global.scss";
+
+.nav-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+    overflow: hidden;
+}
+
+header {
+    top: 0;
+    z-index: 5;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    background: $color--omega-lightgray;
+    max-width: 290px;
+
+    &.min {
+        width: calc($size--icon + 2 * $size--half-em);
+        border-bottom-right-radius: $size--half-em;
+
+        a, nav {
+            display: none;
+        }
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: $size--half-em;
+    
+        img {
+            width: $size--icon;
+            height: $size--icon;
+        }
+        a {
+            margin-left: 0.2em;
+        }
+    }
+
+    .max {
+        display: none;
+    }
+
+    nav {
+        top: calc($size--icon + 2 * $size--half-em);
+        position: absolute;
+        background: $color--omega-lightgray;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+
+        a {
+            padding: 0.5em 1em;
+            border-top: 2px solid $color--omega-darkgray;
+        }
+    }
+    
+    @media screen and (min-width: 681px) {
+        min-width: 300px;
+
+        .logo a {
+            margin-left: 0.8em;
+        }
+
+        nav a {
+            padding: 1em 2em;
+        }
+
+        &.min a:not(.max), &.min a h1 {
+            display: block;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-bg {
+        display: none;
+    }
+
+    header.min {
+        flex-direction: row;
+        min-width: 100vw;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            display: none;
+        }
+
+        .max, nav {
+            display: flex;
+            flex-direction: row;
+            padding: $size--half-em;
+
+            img {
+                width: $size--icon;
+                height: $size--icon;
+            }
+
+            h1 {
+                padding-left: $size--quarter-em;
+            }
+        }
+
+        nav {
+            position: relative;
+            top: auto;
+            justify-content: flex-end;
+            
+            a {
+                border: none;
+                padding: 0 0 0 1em;
+
+                @media screen and (min-width: 1200px) {
+                    padding-right: 1.5em;
+                }
+            }
+        }
+    }
+}
